@@ -1,37 +1,4 @@
-<?php
-$username = 'dbranch2';
-$password = 'Cygtpw4!';
-$domain = '@radford.edu';
-$server = '137.45.26.80';
-$port = 389;
 
-$ldap_connection = ldap_connect($server, $port);
-
-if (! $ldap_connection)
-{
-    echo '<p>LDAP SERVER CONNECTION FAILED</p>';
-    exit;
-}
-else
-{
-	echo '<p>CONNECTION MADE</p>';
-}
-
-ldap_set_option($ldap_connection, LDAP_OPT_PROTOCOL_VERSION, 3);
-ldap_set_option($ldap_connection, LDAP_OPT_REFERRALS, 0);
-
-$ldap_bind = ldap_bind($ldap_connection, $username.$domain, $password);
-
-if (! $ldap_bind)
-{
-    echo '<p>LDAP BINDING FAILED</p>';
-    exit;
-}
-else 
-{
-	echo '<p>binding worked!</p>';
-}
-?>
 <html> 
 <head>
 	<title>loginScript.php</title>
