@@ -19,6 +19,7 @@ body {
     border-color: #333;
     border-width: 5px;
     text-align: center;
+    width: 100%
     
 }
 
@@ -36,7 +37,7 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #333;
-   
+    width: 100%
 }
 
 /* Style the topnav links */
@@ -58,8 +59,7 @@ body {
 .searchBar {
 	float: right;
 	padding-top: 15px;
-	
-	
+		
 }
 
 .searchButton {
@@ -95,20 +95,38 @@ body {
    border-style: ridge;
    border-color: #333;
    height: 100%;
-   position: fixed;
+   position: fixed; 
 }
 
 
 .column.sideRight {
-	
+	Width: 0%
 }
 
 /* Middle column */
 .column.middle {
-    height: 6000px;
+	
+    width: 90%;
+    float: center;
 }
 
+.rows {
+	width: 70%;
+	list-style-type: none;
+	float: right;
+	column-count: 2;
+}
 
+.result-row {
+	
+	width: 55%;
+	border: ridge;
+	border-color: #333;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
 
 
 /* Clear floats after the columns */
@@ -179,7 +197,68 @@ body {
         
   </div>
   <div class="column middle">
-    
+    <ul class="rows">
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST1
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST2
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST3
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST4
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST5
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST6
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST7
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST8
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST9
+    	</li>
+    	<li class="result-row">
+    	<img src="http://php.radford.edu/~cnewton15/image.jpg" alt="NO PICTURE" style="width:100%;height:100%">
+    	<a href="http://php.radford.edu/~cnewton15/Posting.php">Title of the Book</a>
+    	<br>
+    	TEST10
+    	</li>
+    </ul>
   </div>
   <div class="column sideRight">
   	
